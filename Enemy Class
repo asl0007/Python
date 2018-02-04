@@ -1,21 +1,12 @@
 class Enemy:
-    life = 5
+    def __init__(self,x):
+        self.energy = x
 
-    def attack(self):
-        print('Ouch!')
-        self.life -= 1
+    def get_energy(self):
+        print(self.energy)
 
-    def lifeCheck(self):
-        if self.life <= 0:
-            print("You are dead. Game over!!")
-        else:
-            print(str(self.life) + " lifes are remaining.")
+amit = Enemy(9)
+deepak = Enemy(7)
 
-enemy1 = Enemy()
-enemy2 = Enemy()
-
-enemy1.attack()
-enemy2.attack()
-enemy1.lifeCheck()
-enemy2.lifeCheck()
-enemy1.attack()
+amit.get_energy()
+deepak.get_energy()
