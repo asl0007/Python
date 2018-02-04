@@ -1,0 +1,21 @@
+class Enemy:
+    life = 5
+
+    def attack(self):
+        print('Ouch!')
+        self.life -= 1
+
+    def lifeCheck(self):
+        if self.life <= 0:
+            print("You are dead. Game over!!")
+        else:
+            print(str(self.life) + " lifes are remaining.")
+
+enemy1 = Enemy()
+enemy2 = Enemy()
+
+enemy1.attack()
+enemy2.attack()
+enemy1.lifeCheck()
+enemy2.lifeCheck()
+enemy1.attack()
