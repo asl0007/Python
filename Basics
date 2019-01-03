@@ -70,3 +70,64 @@ False
 False
 >>> divides(2,4)
 True
+
+
+////Strings
+
+>>> string="String"
+>>> string
+'String'
+>>> type(string)
+<class 'str'>
+>>> char='x'
+>>> type(char)
+<class 'str'>
+>>> char
+'x'
+>>> x="Hi! who is there with you?"        
+>>> x
+'Hi! who is there with you?'
+>>> y="Hey 'there"
+>>> y
+"Hey 'there"
+>>> y='HI "there"'       
+>>> y
+'HI "there"'
+>>> z='''Newbie,"New Love",'Alter'.'''
+>>> z
+'Newbie,"New Love",\'Alter\'.'
+>>> x='''first
+... second
+... third'''
+>>> x
+'first\nsecond\nthird'
+>>> x[3]
+'s'
+>>> x[1:5]
+'irst'
+>>> x[:9]
+'first\nsec'
+>>> x[9:]
+'ond\nthird'
+>>> x[:]
+'first\nsecond\nthird'
+>>> x[-7]
+'d'
+>>> x[-6]
+'\n'
+>>> x+y
+'first\nsecond\nthirdHI "there"'
+>>> x+y+z
+'first\nsecond\nthirdHI "there"Newbie,"New Love",\'Alter\'.'
+>>> len(x)
+18
+>>> x[-2:3]
+''
+>>> x[-2:-5]     
+''
+>>> x[:90]
+'first\nsecond\nthird'
+>>> x[:15]+"asdf"           
+'first\nsecond\nthasdf'
+
+
