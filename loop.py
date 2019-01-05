@@ -7,13 +7,13 @@ def factors(n):
             flist = flist + [i]
     return(flist)
 
-<!--
+
 #>>> from loop import *
 #>>> factors(98)
 #[1, 2, 7, 14, 49, 98]
 #>>> factors(10)
 #[1, 2, 5, 10]
--->
+
 
 
 #////Factors using while loop in reverse order////
@@ -27,10 +27,10 @@ def factors(n):
         i=i-1
     return(flist)
 
-<!--
+
 #>>> from loop import *
 #>>> factors(98)
 #[98, 49, 14, 7, 2, 1]
 #>>> factors(10)
 #[10, 5, 2, 1]
--->
+
