@@ -1,0 +1,14 @@
+class Girl:                   //Class
+
+    gender = "Female"
+
+    def __init__(self,name):
+        self.name = name                    //Instance
+
+a = Girl('Colin')
+b = Girl('Halein')
+
+print(a.gender)
+print(b.name)
+print(b.gender)
+print(a.name)

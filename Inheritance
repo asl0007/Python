@@ -1,0 +1,21 @@
+class grand():
+
+    def l_name(self):
+        print("Ali")
+
+class  Parent():
+
+    def mid_name(self):
+        print("Ali")
+
+class child(grand, Parent):
+
+    def first_name(self):
+        print("Shiraz ")
+
+
+
+A = child()
+A.first_name()
+A.mid_name()
+A.l_name()

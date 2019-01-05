@@ -1,3 +1,5 @@
 # Python
 
-Create and update basic python program
+NPTEL COURSE
+
+Programming, Data Structures and Algorithms- https://nptel.ac.in/courses/106106145/
