@@ -4,7 +4,7 @@ NPTEL COURSE
 
 Programming, Data Structures and Algorithms- https://nptel.ac.in/courses/106106145/
 
-ALGORITHM 
+>ALGORITHM 
 
 -it tells how to sytematically perform some task
 -manipulate information
@@ -12,19 +12,19 @@ ALGORITHM
 -reorganize data
 -optimization
 
-PROGRAMMING language 
+>PROGRAMMING language 
 -describe steps
 -determine sequence of steps
 
 
-What makes a good program?
+>What makes a good program?
 -correctness and efficiency
 -readability
 -ease of maintenance
 -what you say and how you say it
 
 
-PYTHON
+>PYTHON
 -Interpreted language
 
 
@@ -38,7 +38,7 @@ Interpreter- Itself a program that runs and directly uunderstandsto be executed
            
            
            
-Assignment statement- asssign a value to a name
+>Assignment statement- asssign a value to a name
 left hand side(name)
 right hand side(expression or value)
 i=5 
@@ -61,12 +61,12 @@ e.g  0.602 * 10^24
 here 0.602 is mantissa and 24 is exponent
 
 Comparison
-== equals to
-!= not equals to
-< less than
-> greater than
-<= less than equal to
->= greater than equal to
+'==' equals to
+'!=' not equals to
+'<' less than
+'>' greater than
+'<=' less than equal to
+'>=' greater than equal to
 
 type conversion
 -str(78)= "78"
@@ -80,7 +80,7 @@ Text processing
 -import / export spreadsheet data
 -matching search queries to content
 
-STRING
+>STRING
 -enclosed in quotes
 1.single('')
 2.double("")
@@ -89,11 +89,11 @@ STRING
 --concatenation i.e addition of two string using '+' operator
 --length of string i.e len(s)
 -Extraction of string(slicing)
->A slice is a 'segment'of a string
+->A slice is a 'segment'of a string
 -we cant update a string in place instead use slice and concatenation.
 
 
-LISTS
+>LISTS
 -sequence of values
 -types need not to be uniform
 -extract value by position, slice
@@ -102,7 +102,7 @@ LISTS
 -nested list(list can contain other lists)
 -lists are mutable i.e it can be updated in place
 -A slice creates a new list from an old one
->omitting both end points gives a full slice
+->omitting both end points gives a full slice
 -concatenation always produces a new list
 -adding an element to a list in place can be done using append() function
 -append is a function that adds values/lists in the list 
@@ -114,7 +114,7 @@ LISTS
 values of type int, float, bool, str are immmutable
 
 
-Control flow
+>Control flow
 -Need to vary computation steps as value change
 -it determines order in which statements are executed
 -conditional execution
