@@ -187,3 +187,57 @@ TypeError: unsupported operand type(s) for +: 'range' and 'list'
 >>> list1= list(range(0,1000000,2)) + list(range(1,1000000,2))
 
 '''
+
+////UNION////
+shiraz@shiraz-Vostro-1550:~/Documents/Python$ more mergesort.py
+def merge(a,b):
+    (c,m,n)=([],len(a),len(b))
+    (i,j)=(0,0)#current position in a,b
+
+    while i+j < m+n:#i+j is no of elements sorted so far
+                  
+        if i==m:#'a[]' is empty,add 'b[]' to 'c[]'
+            c.append(b[j])
+            j=j+1
+
+        elif j==n:#'b[]' is empty,add 'a[]' to 'c[]'
+            c.append(a[i])
+            i=i+1
+                
+        elif a[i]<=b[j]:#head of 'a[]' is smaller
+            while a[i]==b[j]:
+                j=j+1
+            c.append(a[i])
+            i=i+1
+
+        elif a[i]>b[j]:#head of 'b[]' is smaller
+            c.append(b[j])
+            j=j+1
+
+    return(c)
+
+
+def mergesort(a,l,r):
+    #sort the slice a[left:right]
+
+    if r-l <= 1:#Base case
+        return(a[l:r])
+
+    if r-l > 1:#recursive call
+
+        mid=(l+r)//2
+        left=mergesort(a,l,mid)
+        right=mergesort(a,mid,r)
+
+        return(merge(left,right))        
+shiraz@shiraz-Vostro-1550:~/Documents/Python$ python3
+Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from mergesort import *
+>>> l1=[1,2,3]
+>>> l2=[3,2,3,5]
+>>> mergesort(merge(l1,l2),0,len(merge(l1,l2)))
+[1, 2, 3, 5]
+>>> 
+
