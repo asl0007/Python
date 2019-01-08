@@ -185,9 +185,9 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for +: 'range' and 'list'
 >>> list1= list(range(0,1000000,2)) + list(range(1,1000000,2))
-
 '''
 
+'''
 ////UNION////
 shiraz@shiraz-Vostro-1550:~/Documents/Python$ more mergesort.py
 def merge(a,b):
@@ -240,4 +240,54 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> mergesort(merge(l1,l2),0,len(merge(l1,l2)))
 [1, 2, 3, 5]
 >>> 
+'''
+
+def union(a,b):
+    (c,m,n)=([],len(a),len(b))
+    (i,j)=(0,0)#current position in a,b
+    while i+j < m+n:#i+j is no of elements sorted so far
+
+        if i==m:#'a[]' is empty,add 'b[]' to 'c[]'
+            c.append(b[j])
+            j=j+1
+
+        elif j==n:#'b[]' is empty,add 'a[]' to 'c[]'
+            c.append(a[i])
+            i=i+1
+
+        elif a[i]<=b[j]:#head of 'a[]' is smaller
+            while a[i]==b[j]:
+                j=j+1
+            c.append(a[i])
+            i=i+1
+
+        elif a[i]>b[j]:#head of 'b[]' is smaller
+            c.append(b[j])
+            j=j+1
+
+    return(c)
+
+'''
+shiraz@shiraz-Vostro-1550:~/Documents/Python$ python3
+Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from mergesort import *
+>>> l=[1,5,3,4,2,0,8,7,9]
+>>> mergesort(l,0,len(l))
+[0, 1, 2, 3, 4, 5, 7, 8, 9]
+>>> a=[1,2,3,4,32,54,67]
+>>> union(l,a)
+[1, 2, 3, 4, 5, 3, 4, 2, 0, 8, 7, 9, 32, 54, 67]
+>>> union(a,l)
+[1, 2, 3, 4, 5, 3, 4, 2, 0, 8, 7, 9, 32, 54, 67]
+>>> l=mergesort(l,0,len(l))
+>>> l
+[0, 1, 2, 3, 4, 5, 7, 8, 9]
+>>> union(a,l)
+[0, 1, 2, 3, 4, 5, 7, 8, 9, 32, 54, 67]
+>>> union(l,a)
+[0, 1, 2, 3, 4, 5, 7, 8, 9, 32, 54, 67]
+'''
+
 
