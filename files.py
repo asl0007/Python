@@ -176,3 +176,46 @@ io.UnsupportedOperation: not readable
 >>> fout.readline()
 ''
 >>> 
+
+
+shiraz@shiraz-Vostro-1550:~/Documents/Python$ python3
+Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> fin=open("input.py","a")
+>>> s="\n input break \n"
+>>> fin.write(s)
+15
+>>> fin.flush()
+>>> fin.close()
+>>> fin=open("input.py","r")
+>>> for line in fin.readline():
+...   print(line)
+... 
+i
+n
+p
+u
+t
+ 
+f
+i
+l
+e
+
+
+>>> content=fin.readline()
+>>> s=line.rstrip()
+>>> for line in fin.readline():
+...   print(line)
+... 
+>>> s
+''
+>>> content
+' input break \n'
+>>> text=fin.read()
+>>> text
+''
+>>> fin.close()
+>>> 
+
