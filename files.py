@@ -219,3 +219,89 @@ e
 >>> fin.close()
 >>> 
 
+
+
+
+shiraz@shiraz-Vostro-1550:~/Documents/Python$ python3
+Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> s="         hello"
+>>> s
+'\t\thello'
+>>> t=l.strip()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'l' is not defined
+>>> t=s.lstrip()
+>>> t
+'hello'
+>>> p="
+  File "<stdin>", line 1
+    p="
+      ^
+SyntaxError: EOL while scanning string literal
+>>> p="         I LOVE YOU            "
+>>> t=p.strip()
+>>> t
+'I LOVE YOU'
+>>> p="         I LOVE YOU            "
+>>> t=p.rstrip()
+>>> t
+'\t\tI LOVE YOU'
+>>> p.find("l")
+-1
+>>> p.find("L")
+4
+>>> s.find("l",3,len(s)
+... )
+4
+>>> s
+'\t\thello'
+>>> s.find("l",4,len(s))
+4
+>>> s.find("l",5,len(s))
+5
+>>> t.find("l",4,len(s))
+-1
+>>> t
+'\t\tI LOVE YOU'
+>>> t.index()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: index() takes at least 1 argument (0 given)
+>>> t.index(I)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'I' is not defined
+>>> t.index("I")
+2
+>>> p.index("l")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> s
+'\t\thello'
+>>> t=s.lstrip()
+>>> t
+'hello'
+>>> t.replace("ll","xt")
+'hexto'
+>>> t.replace("h","D")
+'Dello'
+>>> t.split("'")
+['hello']
+>>> t.split(":")
+['hello']
+>>> csvline="5,4,3,6,8"
+>>> columns=csvline.split(",",2)
+>>> columns
+['5', '4', '3,6,8']
+>>> columns=csvline.split(",")
+>>> columns
+['5', '4', '3', '6', '8']
+>>> columns=csvline.split(",",2,4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: split() takes at most 2 arguments (3 given)
+>>> 
