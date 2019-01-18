@@ -19,7 +19,7 @@ def undoqueen(i,j,board):
 
 def printboard(board):
   for row in sorted(board['queen'].keys()):
-    print((row,board['queen']['row']))
+    print((row,board['queen'][row]))
 
 def initialize(board,n):
   for key in ['queen', 'row', 'col', 'nwtose', 'swtone']:
