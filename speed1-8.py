@@ -1,3 +1,6 @@
+#Output file for input file added via upload namely speed1, speed2, ....
+
+'''
 shiraz@shiraz-Vostro-1550:~/Documents/Python$ python3 speed1.py
 9
 shiraz@shiraz-Vostro-1550:~/Documents/Python$ python3 speed5.py
@@ -66,3 +69,4 @@ real	0m0.035s
 user	0m0.030s
 sys	0m0.004s
 shiraz@shiraz-Vostro-1550:~/Documents/Python$ 
+'''
