@@ -313,3 +313,37 @@ int("54g") will yield an  error.
 [0, [1, 2, 3, 4], 4, 7, 10]
 >>> 
 >>>>>>> master
+
+
+
+
+#Scope of a mame
+
+shiraz@shiraz-Vostro-1550:~/Documents/Python$ python3
+Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def f
+  File "<stdin>", line 1
+    def f
+        ^
+SyntaxError: invalid syntax
+>>> def f():
+...   y=x
+...   print(y)
+... 
+>>> x=7
+>>> f()
+7
+>>> def f():
+...   y=x
+...   print(y)
+...   x=22
+... 
+>>> x=7
+>>> f()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in f
+UnboundLocalError: local variable 'x' referenced before assignment
+>>> 
