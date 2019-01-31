@@ -128,3 +128,28 @@ A function must be defined before it is invoked
 -mutable values are affected while immutables are not during a function call
 -recursive function (a function can call itself)
 -functions are a good way to organize code in logical chunks
+
+
+LINK LIST
+-CREATE NODE
+-INSERT NODE(BEG,END,SPECIFIC)
+-DELETE NODE
+-APPEND VALUE
+
+-PRIORITY QUEUE(HEAP)-
+
+TREE
+
+-INSERT
+-DELETE
+-TRAVERSAL
+
+
+MEMOIZATION
+
+
+DYNAMIC PROGRAMMING
+-GRID PATHS
+-LONGEST COMMON SUBWORD
+-LONGEST COMMON SUBSEQUENCE
+-MATRIX MULTIPLICATION
