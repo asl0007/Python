@@ -1,8 +1,6 @@
 #Problem link
 '''''''''https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays'''''''''
 #Solution
-#!/bin/python3
-
 import math
 import os
 import random
@@ -26,3 +24,24 @@ if __name__ == '__main__':
     result = hourglassSum(arr)
     fptr.write(str(result) + '\n')
     fptr.close()
+
+#Problem Statement
+"""""""""https://www.hackerrank.com/challenges/time-conversion/problem"""""""""
+#Solution
+import os
+import sys
+# Complete the timeConversion function below.
+def timeConversion(s):
+    time = s.strip()
+    h, m, s = map(int, time[:-2].split(':'))
+    p = time[-2:]
+    h = h % 12 + (p.upper() == 'PM') * 12
+    return(('%02d:%02d:%02d') % (h, m, s))
+
+if __name__ == '__main__':
+    f = open(os.environ['OUTPUT_PATH'], 'w')
+    s = input()
+    result = timeConversion(s)
+    f.write(result + '\n')
+    f.close()
+    
