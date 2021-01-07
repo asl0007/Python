@@ -139,8 +139,20 @@ def nprime(n):
         i=i+1
     return(plist)
 
-#>>> from loop import *
-#>>> nprime(5)
-#[2, 3, 5, 7, 11]
-#>>> nprime(10)
-#[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+>>> from loop import *
+>>> nprime(5)
+[2, 3, 5, 7, 11]
+>>> nprime(10)
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
+# Problem link - https://www.hackerrank.com/challenges/30-loops/problem
+# Solution
+import math
+import os
+import random
+import re
+import sys
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(1,11):
+        print(str(n) + " x " + str(i) + " = " + str(n*i))
