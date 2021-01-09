@@ -13,3 +13,10 @@ import numpy
 n = tuple(map(int, input().split()))
 print(numpy.zeros(n, dtype=numpy.int))
 print(numpy.ones(n, dtype=numpy.int))
+
+# https://www.hackerrank.com/challenges/np-eye-and-identity/problem?h_r=next-challenge&h_v=zen
+
+import numpy
+
+print(str(numpy.eye(*map(int,input().split()))).replace('1',' 1').replace('0',' 0'))
+
