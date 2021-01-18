@@ -4,15 +4,16 @@ NPTEL COURSE
 
 Programming, Data Structures and Algorithms- https://nptel.ac.in/courses/106106145/
 
->ALGORITHM 
-
+#### ALGORITHM 
+```
 -it tells how to sytematically perform some task
 -manipulate information
 -compute numerical functions
 -reorganize data
 -optimization
-
->PROGRAMMING language 
+```
+`````
+#### PROGRAMMING language 
 -describe steps
 -determine sequence of steps
 
@@ -153,3 +154,4 @@ DYNAMIC PROGRAMMING
 -LONGEST COMMON SUBWORD
 -LONGEST COMMON SUBSEQUENCE
 -MATRIX MULTIPLICATION
+`````
