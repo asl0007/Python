@@ -106,7 +106,6 @@ LISTS
 
 values of type int, float, bool, str are immmutable
 
-
 Control flow
 -Need to vary computation steps as value change
 -it determines order in which statements are executed
@@ -135,7 +134,7 @@ TREE
 -DELETE
 -TRAVERSAL
 
-MEMOIZATION
+MEMOIZATION - Memoization is the process by which when we are computing a recursive function, we compute the values one at a time, and as we compute them we store them in a table and look up the table before we recompute any.
 
 DYNAMIC PROGRAMMING
 -GRID PATHS
