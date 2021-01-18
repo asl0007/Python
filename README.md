@@ -3,45 +3,38 @@
 NPTEL COURSE
 
 Programming, Data Structures and Algorithms- https://nptel.ac.in/courses/106106145/
-
-#### ALGORITHM 
-```
+`````
+ALGORITHM 
 -it tells how to sytematically perform some task
 -manipulate information
 -compute numerical functions
 -reorganize data
 -optimization
-```
-`````
-#### PROGRAMMING language 
+
+PROGRAMMING language 
 -describe steps
 -determine sequence of steps
 
-
->What makes a good program?
+?> What makes a good program?
 -correctness and efficiency
 -readability
 -ease of maintenance
 -what you say and how you say it
 
-
->PYTHON
+PYTHON
 -Interpreted language
 
-
-Python2 = older version,static
+Python2 = older version, static
 Python3 = modern and current version
 
 Compiler- It translates High Level language to Machine Level language
 
 Interpreter- Itself a program that runs and directly uunderstandsto be executed
-           -it executes statements from top to bottom
-           
-           
-           
->Assignment statement- asssign a value to a name
-left hand side(name)
-right hand side(expression or value)
+           -it executes statements from top to bottom        
+          
+Assignment statement - asssign a value to a name
+           left hand side(name)
+           right hand side(expression or value)
 i=5 
 j=2*i
 j=j+5
@@ -81,7 +74,7 @@ Text processing
 -import / export spreadsheet data
 -matching search queries to content
 
->STRING
+STRING
 -enclosed in quotes
 1.single('')
 2.double("")
@@ -93,8 +86,7 @@ Text processing
 ->A slice is a 'segment'of a string
 -we cant update a string in place instead use slice and concatenation.
 
-
->LISTS
+LISTS
 -sequence of values
 -types need not to be uniform
 -extract value by position, slice
@@ -115,7 +107,7 @@ Text processing
 values of type int, float, bool, str are immmutable
 
 
->Control flow
+Control flow
 -Need to vary computation steps as value change
 -it determines order in which statements are executed
 -conditional execution
@@ -130,24 +122,20 @@ A function must be defined before it is invoked
 -recursive function (a function can call itself)
 -functions are a good way to organize code in logical chunks
 
-
 LINK LIST
 -CREATE NODE
 -INSERT NODE(BEG,END,SPECIFIC)
 -DELETE NODE
 -APPEND VALUE
 
--PRIORITY QUEUE(HEAP)-
+-PRIORITY QUEUE(HEAP)
 
 TREE
-
 -INSERT
 -DELETE
 -TRAVERSAL
 
-
 MEMOIZATION
-
 
 DYNAMIC PROGRAMMING
 -GRID PATHS
